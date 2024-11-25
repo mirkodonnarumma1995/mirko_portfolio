@@ -13,7 +13,7 @@ Route::get('/chi-è-mirko', function () {
 })->name('chi-è-mirko');
 
 Route::get('/contattami', function () {
-    return view('contattami');
+    return view('contact');
 })->name('contattami');
 
 Route::get('/OHI', function () {

@@ -50,7 +50,7 @@ body {
 
 .about-section, .experience-section, .passion-section {
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 17px;
     border-radius: 5px;
 }
 
@@ -67,7 +67,7 @@ body {
 
 .colonna-foto img {
     max-width: 100%;
-    height: auto;
+    height: 90%;
     border-radius: 5px;
 }
 
@@ -78,6 +78,6 @@ h2 {
 
 p {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1;
     color: #666;
 }
