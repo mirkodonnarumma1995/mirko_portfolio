@@ -35,10 +35,7 @@ html {
     padding: 1%;
 }
 
-.pill-button,
-footer {
-    background-color: var(--nav-footer-bg-color);
-}
+.pill-button
 
 .pill-button {
     border: none;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirko Donnarumma | Home</title>
+    <title>mirko.dev</title>
     <meta name="description" content="Il portfolio di Mirko Donnarumma, un software developer.">
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
