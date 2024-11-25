@@ -1,0 +1,61 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: Lato;
+}
+
+.container {
+    background-color: rgb(52, 59, 63);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+.DIV-0 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.DIV-2 {
+    background-color: rgb(52, 59, 63);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+}
+
+.pill-button,
+footer {
+    background-color: var(--nav-footer-bg-color);
+}
+
+.pill-button {
+    border: none;
+    padding: .67rem 1rem !important;
+    display: inline-block;
+    margin: .25rem .6rem;
+    cursor: pointer;
+    border-radius: 1.6rem;
+}
+
+#name {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+#social a {
+    margin: .2rem;
+    font-size: xx-large;
+}
