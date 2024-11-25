@@ -16,11 +16,11 @@
         <header>
             <nav class="header">
                 <a href="/" class="title">mirko.dev</a>
-                <nav>
-                    <a href="localhost:8000/">Home🏠</a>
-                    <a href="localhost:8000/chi-sono">Chi sono❔</a>
-                    <a href="localhost:8000/contattami">Contattami✉️</a>
-                    <a href="localhost:8000/OHI">OHI✍🏻</a>
+                <nav class="redirects">
+                    <a href="localhost:8000/">Home 🏠</a>
+                    <a href="localhost:8000/chi-sono">Chi sono ❔</a>
+                    <a href="localhost:8000/contattami">Contattami ✉️</a>
+                    <a href="localhost:8000/OHI">OHI ✍🏻</a>
                 </nav>
             </nav>
         </header>
@@ -50,8 +50,8 @@
                 </a>
             </div>
             <div class="DIV-2">
-                <a href="https://resume.mirko.dev" target=" _blank" rel="noopener noreferrer" class="pill-button padding-small margin-right-medium">CV</a>
-                <a href="mailto:mirko.donnarumma@outlook.it" target="_blank" rel="noopener noreferrer" class="pill-button padding-small margin-right-medium">Contattami</a>
+                <a href="https://resume.mirko.dev" target=" _blank" rel="noopener noreferrer" class="button">CV</a>
+                <a href="mailto:mirko.donnarumma@outlook.it" target="_blank" rel="noopener noreferrer" class="button">Contattami</a>
             </div>
         </div>
         <footer class="FOOTER-0">© 2025, Built with ❤️ by Mirko Donnarumma</footer>

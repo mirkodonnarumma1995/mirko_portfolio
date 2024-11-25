@@ -59,3 +59,30 @@ footer {
     margin: .2rem;
     font-size: xx-large;
 }
+
+.button {
+    background-color: #333;
+    /* Colore di sfondo */
+    border: none;
+    border-radius: 20px;
+    /* Angoli arrotondati */
+    color: white;
+    /* Colore del testo */
+    padding: 10px 20px;
+    /* Spaziatura interna */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    /* Transizione per l'hover */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555;
+    /* Colore di sfondo al passaggio del mouse */
+    color: white;
+    /* Colore del testo al passaggio del mouse */
+}
