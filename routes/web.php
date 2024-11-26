@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController;
 
 // web.php
 Route::get('/', function () {
@@ -23,3 +23,6 @@ Route::get('/OHI', function () {
 Route::get('/curriculum', function () {
     return view('curriculum');
 });
+
+Route::get('/contact', [ContactController::class, 'showForm']);
+Route::post('/contact', [ContactController::class, 'sendMail']);
