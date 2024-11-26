@@ -1,3 +1,3 @@
 <footer class="pedice">
-    <p>&copy; {{ date('Y') }} Mirko Donnarumma. Tutti i diritti riservati.</p>
+    <p style="color: aliceblue;">&copy; {{ date('Y') }} Mirko Donnarumma. Tutti i diritti riservati.</p>
 </footer>

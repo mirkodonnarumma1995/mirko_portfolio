@@ -1,6 +1,5 @@
 a, a:hover {
   text-decoration: none !important;
-  color: rgb(255, 255, 255);
   font-size: 16px;
 }
 
@@ -12,6 +11,7 @@ nav a {
   margin-left: 1vw;
   margin-right: 1vw;
   font-size: 1rem !important;
+  color: aliceblue;
 }
 
 .header {
@@ -32,7 +32,6 @@ nav a {
 .title {
   background-color: rgba(37, 37, 37, 0.98);
   text-align: center;
-  color: rgb(255, 255, 255);
   font-size: 1.3rem !important;
   padding: 8px;
   margin-left: 1vw;

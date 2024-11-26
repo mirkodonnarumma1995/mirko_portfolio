@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mirko.dev</title>
-    <meta name="description" content="Il portfolio di Mirko Donnarumma, un software developer.">
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
@@ -14,7 +13,7 @@
 
 <body>
     <div class="container">
-        @include('partials.header') <!-- Include il file header -->
+        @include('partials.header')
         <div class="DIV-0">
             <p id="name">👋, sono Mirko!</p>
             <div id="social" class="text-center">
