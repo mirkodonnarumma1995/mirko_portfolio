@@ -1,10 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Request;
 
-class HomeController extends Controller
+class HomeController
 {
     public function index()
     {

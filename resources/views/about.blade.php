@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="colonna-foto">
-            <img src="{{ asset('media/IMG_4887.PNG') }}" alt="Mirko Donnarumma">
+            <img src="{{ asset('media/me.png') }}" alt="Mirko Donnarumma">
         </div>
     </div>
     @include('partials.footer') <!-- Include il file footer -->

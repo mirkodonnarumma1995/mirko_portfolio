@@ -6,8 +6,20 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     padding: 20px;
+    background-color: rgb(52, 59, 63);
+}
+
+.markdown-body {
+    background-color: rgb(52, 59, 63);
+    color: aliceblue;
 }

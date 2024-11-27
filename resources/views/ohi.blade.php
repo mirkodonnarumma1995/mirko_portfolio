@@ -13,8 +13,10 @@
     @include('partials.header')
     <div class="container">
         <h1>Oggi Ho Imparato 📚</h1>
-    </div>
-    @include('partials.footer')
+        <div class="markdown-body">
+            {!! $html !!}
+        </div>
+        @include('partials.footer')
 </body>
 
 </html>
