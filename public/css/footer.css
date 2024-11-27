@@ -1,8 +1,9 @@
-.pedice {
-  position: fixed;
-  bottom: 0;
+footer {
   text-align: center;
-  padding: 1rem;
-  font-family: Lato;
+  padding: 10px;
+  background-color: #333;
+  color: aliceblue;
+  position: fixed;
   width: 100%;
+  bottom: 0;
 }

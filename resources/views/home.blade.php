@@ -43,7 +43,7 @@
                 <a href="mailto:mirko.donnarumma@outlook.it" target="_blank" rel="noopener noreferrer" class="button">Contattami</a>
             </div>
         </div>
-        @include('partials.footer') <!-- Include il file footer -->
+        @include('partials.footer')
     </div>
 </body>
 

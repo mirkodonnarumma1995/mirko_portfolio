@@ -3,22 +3,7 @@ html {
     margin: 0px;
     padding: 0px;
     height: 100%;
-    font-family: Lato;
-}
-
-nav {
-    background-color: #333;
-    padding: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav a:hover {
-    background-color: #575757;
-    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -39,14 +24,14 @@ nav a:hover {
 
 }
 
-.text-center {
-    text-align: center;
-}
-
 .DIV-2 {
     background-color: rgb(52, 59, 63);
     text-align: center;
     padding: 1%;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .pill-button {
@@ -56,17 +41,6 @@ nav a:hover {
     margin: .25rem .6rem;
     cursor: pointer;
     border-radius: 1.6rem;
-}
-
-#name {
-    color: var(--main-text-color);
-    text-align: center;
-    font-size: 2rem;
-}
-
-#social a {
-    margin: .2rem;
-    font-size: xx-large;
 }
 
 .button {
@@ -94,4 +68,15 @@ nav a:hover {
     /* Colore di sfondo al passaggio del mouse */
     color: white;
     /* Colore del testo al passaggio del mouse */
+}
+
+#name {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+#social a {
+    margin: .2rem;
+    font-size: xx-large;
 }
