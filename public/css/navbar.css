@@ -16,7 +16,7 @@ nav a {
   margin-left: 1vw;
   margin-right: 1vw;
   font-size: 1rem !important;
-  color: aliceblue;
+  color: white;
   text-decoration: none;
   padding: 10px;
 }
@@ -36,7 +36,7 @@ nav a:hover {
 }
 
 .active {
-  border-bottom: .1rem solid aliceblue;
+  border-bottom: .1rem solid white;
   display: inline;
   padding-bottom: .2rem;
   text-decoration: underline;
