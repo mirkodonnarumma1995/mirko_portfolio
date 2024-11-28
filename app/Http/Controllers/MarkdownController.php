@@ -2,31 +2,38 @@
 
 namespace App\Http\Controllers;
 
-use Parsedown;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class MarkdownController extends HomeController
 {
-    public function show()
+
+    public function show(Request $request)
     {
-        $parsedown = new Parsedown();
+        $markdownFile = storage_path('app/ohi.md');
+        $content = File::exists($markdownFile) ? File::get($markdownFile) : '';
 
-        // Esempio di Markdown complesso
-        $markdown = <<<MD
-        ## Progressi Scolastici
+        // Splitting content into sections by day
+        $days = preg_split('/\n(?=# )/', $content);
+        $days = array_filter($days); // remove empty elements
 
-        ### 27/11/2024
+        // Get the current page from the query string or default to 1
+        $currentPage = $request->input('page', 1);
+        $perPage = 4; // Number of days per page
 
-        #### Materia: *Matematica*
-        
-        **Titolo:** *Studio delle funzioni*
-        
-        **Descrizione:** Oggi ho imparato a calcolare i limiti delle funzioni e 
-        a determinare la continuità. Abbiamo anche esplorato il concetto di 
-        derivata e il suo utilizzo nella risoluzione di problemi di ottimizzazione.
-        MD;
+        // Calculate the offset
+        $offset = ($currentPage - 1) * $perPage;
 
-        $html = $parsedown->text($markdown);
+        // Slice the array of days to get the current page items
+        $pagedDays = array_slice($days, $offset, $perPage);
 
-        return view('ohi', ['html' => $html]);
+        // Calculate total pages
+        $totalPages = ceil(count($days) / $perPage);
+
+        return view('ohi', [
+            'days' => $pagedDays,
+            'currentPage' => $currentPage,
+            'totalPages' => $totalPages,
+        ]);
     }
 }

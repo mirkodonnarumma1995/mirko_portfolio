@@ -6,8 +6,10 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    color: aliceblue;
+h1,
+h2,
+h3,
+p {
     text-align: center;
 }
 
@@ -19,7 +21,18 @@ h1 {
     background-color: rgb(52, 59, 63);
 }
 
-.markdown-body {
-    background-color: rgb(52, 59, 63);
-    color: aliceblue;
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: rgb(52, 59, 63);
+}
+
+.pagination a.active {
+    font-weight: bold;
+    color: rgb(52, 59, 63);
 }
