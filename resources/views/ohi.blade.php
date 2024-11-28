@@ -11,28 +11,39 @@
 
 <body>
     @include('partials.header')
-    <h1>Oggi Ho Imparato 📚</h1><br><br>
+    <h1>Oggi Ho Imparato 📚</h1>
 
-    @foreach ($days as $day)
-    <div class="day">
-        {!! \Illuminate\Support\Str::markdown($day) !!}
+    <div id="grid-container" class="grid-container">
+        @foreach ($days as $day)
+            <div class="card">
+                {!! \Illuminate\Support\Str::markdown($day) !!}
+            </div>
+        @endforeach
     </div>
-    @endforeach
 
-    <div class="pagination">
-        @if ($currentPage > 1)
-        <a href="?page={{ $currentPage - 1 }}">Precedente</a>
-        @endif
+    <script>
+        let page = 1;
+        const gridContainer = document.getElementById('grid-container');
 
-        @for ($i = 1; $i <= $totalPages; $i++)
-            <a href="?page={{ $i }}" class="{{ $currentPage == $i ? 'active' : '' }}">{{ $i }}</a>
-            @endfor
+        window.addEventListener('scroll', () => {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                loadMoreContent();
+            }
+        });
 
-            @if ($currentPage < $totalPages)
-                <a href="?page={{ $currentPage + 1 }}">Successiva</a>
-                @endif
-    </div>
-    @include('partials.footer')
+        function loadMoreContent() {
+            page++;
+            fetch(`{{ url('/ohi?page=') }}${page}`)
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const newCards = doc.querySelectorAll('.card');
+                    newCards.forEach(card => gridContainer.appendChild(card));
+                })
+                .catch(error => console.error('Error loading more content:', error));
+        }
+    </script>
 </body>
 
 </html>

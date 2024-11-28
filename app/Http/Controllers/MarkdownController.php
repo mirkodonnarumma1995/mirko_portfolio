@@ -19,7 +19,7 @@ class MarkdownController extends HomeController
 
         // Get the current page from the query string or default to 1
         $currentPage = $request->input('page', 1);
-        $perPage = 4; // Number of days per page
+        $perPage = 365; // Number of days per page
 
         // Calculate the offset
         $offset = ($currentPage - 1) * $perPage;
