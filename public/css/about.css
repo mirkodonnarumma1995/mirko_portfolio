@@ -1,75 +1,86 @@
 /* about.css */
+:root {
+    --background-color: #333b3e;
+    --section-bg-color: #f4f4f4;
+    --text-color-primary: #333;
+    --text-color-secondary: #666;
+    --text-color-tertiary: #777;
+    --font-family: 'Lato', sans-serif;
+    --padding: 15px;
+    --margin: 20px;
+    --border-radius: 10px;
+}
+
 body,
 html {
-    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    height: 100%;
+    font-family: var(--font-family);
 }
 
 .container {
+    background-color: var(--background-color);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .colonna-testo {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.colonna-testo div {
-    margin-bottom: 20px;
+.colonna-testo section {
+    margin: var(--margin);
+    background-color: var(--section-bg-color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
 }
 
-.about-section, .experience-section, .passion-section {
-    background-color: #f4f4f4;
-    padding: 17px;
-    border-radius: 5px;
+.colonna-testo h2 {
+    text-align: left;
+    font-size: 24px;
+    color: var(--text-color-primary);
 }
 
-.about-section:first-of-type {
-    border-top: none;
+.colonna-testo p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--text-color-secondary);
+}
+
+.colonna-testo blockquote {
+    font-style: italic;
+    font-size: 16px;
+    color: var(--text-color-tertiary);
 }
 
 .colonna-foto {
     width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: var(--margin);
 }
 
 .colonna-foto img {
-    max-width: 100%;
-    height: 90%;
-    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
 }
 
-h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1;
-    color: #666;
-}
-
-/* Media queries for responsive design */
-@media (max-width: 1200px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
-
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .container {
+        flex-direction: column;
     }
-}
 
-@media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr;
+    .colonna-foto {
+        display: none;
     }
 }
