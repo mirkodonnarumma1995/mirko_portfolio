@@ -50,7 +50,6 @@
             <img src="{{ asset('media/me.png') }}" alt="Mirko Donnarumma">
         </div>
     </div>
-    @include('partials.footer')
 </body>
 
 </html>
