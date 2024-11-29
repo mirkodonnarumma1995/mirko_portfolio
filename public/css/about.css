@@ -22,7 +22,6 @@ html {
 }
 
 .container {
-    background-color: var(--background-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
