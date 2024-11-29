@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    @include('partials.header')
+    @include('partials.navbar')
     <h1>Oggi Ho Imparato 📚</h1>
 
     <div id="grid-container" class="grid-container">

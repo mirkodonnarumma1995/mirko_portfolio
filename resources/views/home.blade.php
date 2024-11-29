@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-        @include('partials.header')
+        @include('partials.navbar')
         <div class="DIV-0">
             <p id="name">👋, sono Mirko!</p>
             <div id="social" class="text-center">

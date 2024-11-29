@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    @include('partials.header') <!-- Include il file header -->
+    @include('partials.navbar')
     <div class="container">
         <div class="colonna-testo">
             <div class="about-section">
-                <h2>Chi è Mirko</h2>
+                <h2><i>Chi è Mirko</i></h2>
                 <p>Mirko è una persona che durante le medie si è appassionata al mondo dell'informatica. Come qualsiasi fanciullo che si approccia a qualcosa per la prima volta, presi la decisione di imparare Visual Basic da autodidatta; nulla di male in questo, se non fosse per il fatto che per impararlo, scaricai un PDF da 800 pagine.</p>
                 <p>Smisi di studiare qualche giorno dopo.</p>
                 <p>Dopo diversi anni, nei quali studiai e mi appassionai alla filosofia, all'arte, al mondo videoludico e alla letteratura in generale, durante il mio primo lavoro come addetto in un grande supermercato, mi capitò tra le mani un corso gratuito su Java; mandai la domanda di applicazione e venni accettato.</p>
@@ -26,7 +26,7 @@
                 <blockquote>“Il computer non è una macchina intelligente che aiuta le persone stupide, anzi è una macchina stupida che funziona solo nelle mani delle persone intelligenti.”</blockquote>
             </div>
             <div class="experience-section">
-                <h2>Esperienze professionali</h2>
+                <h2><i>Esperienze professionali</i></h2>
                 <p>Nel corso della mia carriera, ho avuto l'opportunità di lavorare su una vasta gamma di progetti, da applicazioni web complesse a soluzioni software su misura per diverse aziende di settori diversi.</p>
                 <p>Sono un fermo sostenitore dello sviluppo Agile e credo nella consegna continua di valore attraverso iterazioni rapide e feedback costanti. La qualità del codice e l'applicazione delle best practice sono sempre al centro del mio lavoro.</p>
                 <p>Durante gli anni ho avuto modo di realizzare che l'interazione tra chi commissiona il lavoro e chi lo produce è alla base del successo di qualsiasi progetto. Differenze di semantica spesso portano ad incomprensioni e questo mi ha portato a prioritizzare la comunicazione con gli stakeholder prima di qualsiasi cosa.</p>
@@ -34,7 +34,7 @@
                 <p>Una volta cominciati i lavori, è imprescindibile portare a termine gli obbiettivi fissati in partenza, facendo in modo che criteri di scalabilità, manutenibilità, performance e sicurezza siano al primo posto durante gli sviluppi.</p>
             </div>
             <div class="passion-section">
-                <h2>Passioni</h2>
+                <h2><i>Passioni</i></h2>
                 <p>"Nell'ultimo periodo mi sono avvicinato al mondo dei content creator e sto ancora cercando di trovare la nicchia che fa al caso mio. Nel frattempo mi diletto nella creazione di video di gaming, ho una pagina TikTok e un canale Youtube dove carico spezzoni delle live su Twitch.</p>
                 <p>Le grafiche nei vari social sono tutte prodotte da me, così come l'editing dei video.</p>
                 <p>Un'altra passione per la quale sto cercando di crearmi il tempo necessario è il copywriting, sono convinto che sia una skill utile in ogni area della vita.</p>
@@ -45,7 +45,7 @@
             <img src="{{ asset('media/me.png') }}" alt="Mirko Donnarumma">
         </div>
     </div>
-    @include('partials.footer') <!-- Include il file footer -->
+    @include('partials.footer')
 </body>
 
 </html>
